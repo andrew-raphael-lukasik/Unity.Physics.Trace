@@ -4,7 +4,7 @@ I've had an idea to recreate `Entities.Forech`-like syntax for physics calculati
 Trace 
     .Sphere( (0,1,0) , 1 )
     .Ray( (-1,-1,-1) , (1,1,1) )
-    .Cast( out bool didHit , out var raycastHit );
+    .Cast( out bool didHit , out var hit );
 ```
 or 
 ```csharp
@@ -12,7 +12,7 @@ or
 Trace 
     .World( world )
     .Sphere( (0,1,0) , 1 )
-    .Cast( pos , dir , dist , out bool didHit , out var raycastHit );
+    .Cast( pos , dir , dist , out bool didHit , out var hit );
 ```
 .. where `Sphere` and `Ray` can be replaced with any other object ones want to test against.
 Needs extending^2 for any practical use ofc. But as a proof of concept - it seems to work.
