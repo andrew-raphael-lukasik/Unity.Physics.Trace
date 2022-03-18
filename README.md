@@ -18,4 +18,4 @@ Trace
 Needs extending^2 for any practical use ofc. But as a proof of concept - it seems to work.
 
 # Requirements
-`"com.unity.physics": "0.5.0-preview.1"`
+`"com.unity.physics": "0.6.0-preview.3"`
