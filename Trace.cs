@@ -89,10 +89,9 @@ public class Trace
 			Center	= spherePos ,
 			Radius	= sphereRadius
 		};
-		var sphereBlobAsset = SphereCollider.Create( geometry );
-		bool didHit = sphereBlobAsset.Value.CastRay( ray , out raycastHit );
-		sphereBlobAsset.Dispose();
-		return didHit;
+		var sphere = new SphereCollider();
+		sphere.Initialize( geometry , CollisionFilter.Default , Material.Default );
+		return sphere.CastRay( ray , out raycastHit );
 	}
 
 }
