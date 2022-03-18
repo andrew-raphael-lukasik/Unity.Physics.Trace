@@ -70,7 +70,6 @@ public class Trace
 			.Cast( out bool didHit , out var raycastHit );
 	}
 	
-	// TODO: https://forum.unity.com/threads/how-to-castray-on-spherecollider-struct-without-physics-spherecollider-create-allocation.984038/#post-6396377
 	public static bool SphereRay
 	(
 		float3 spherePos ,
